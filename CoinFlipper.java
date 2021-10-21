@@ -1,0 +1,4 @@
+publci class CoinFlipper
+{
+
+}
