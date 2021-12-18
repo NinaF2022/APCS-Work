@@ -2,7 +2,7 @@ public class SumOfSquares
 {
   public static double sumOfSquares(double[] values)
   {
-    double total = 0;
+    double total = 0.0;
 
     for (double i = 0; i<=values.length; i++)
     {
