@@ -1,6 +1,6 @@
 import processing.core.*;
 
-public class Project extends PApplet
+public class NotProject extends PApplet
 {
     public void settings()
     {
