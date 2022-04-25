@@ -1,10 +1,10 @@
 public class Animal
 {
-  public Animal (String n, int l, boolean f)
+  public Animal (String name, int legCount, boolean furriness)
   {
-    name = n;
-    legCount = l;
-    furriness = f;
+    this.name = name;
+    this.legCount = legCount;
+    this.furriness = furriness;
   }
 
   public String getName()

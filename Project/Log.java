@@ -5,8 +5,8 @@ public class Log
   public Log(PApplet p)
   {
     this.p=p;
-    this.x = p.width;
-    this.y = p.height/2-50;
+    //this.x = p.width;
+    //this.y = p.random(p.height/2-50, p.height/2-150);
     this.vx = -5;
     setup();
   }
@@ -18,6 +18,7 @@ public class Log
     }
     public void drawLog()
     {
+
       System.out.println("draw log");
       System.out.println(x + "x");
       System.out.println(y + "y");
@@ -25,6 +26,36 @@ public class Log
       x= x + vx;
     }
 
+    public void setInitialPosition(float xPos, float yPos)
+    {
+      x = xPos;
+      y = yPos;
+    }
+
+    public void setSpeed(float speed)
+    {
+      vx = speed;
+    }
+
+    public float getX()
+    {
+      return x;
+    }
+
+    public float getY()
+    {
+      return y + 10;
+    }
+
+    public float getWidth()
+    {
+      return 60;
+    }
+
+    public float getHeight()
+    {
+      return 60 - 20;
+    }
 
 
     private PApplet p;
